@@ -1,4 +1,4 @@
-<!-- CSS Files hi -->
+<!-- CSS Files -->
 <link href="<?= base_url('assets/fonts/fonts.css?v=1.0.0'); ?>" rel="stylesheet" />
 <link href="<?= base_url('assets/css/material-dashboard.css'); ?>" rel="stylesheet" />
 <link href="<?= base_url('assets/css/style.css?v=1.0.0'); ?>" rel="stylesheet" />
