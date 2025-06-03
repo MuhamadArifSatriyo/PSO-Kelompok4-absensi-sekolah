@@ -78,5 +78,5 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build -t ${{ secrets.AZURE_REGISTRY_URL }}/ci-app:latest .
-          docker push ${{ secrets.AZURE_REGISTRY_URL }}/ci-app:latest
+          docker build -t ${{ secrets.AZURE_REGISTRY_URL }}/myapp:latest .
+          docker push ${{ secrets.AZURE_REGISTRY_URL }}/myapp:latest

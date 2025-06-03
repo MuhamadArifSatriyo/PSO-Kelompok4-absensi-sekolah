@@ -1,0 +1,25 @@
+- hosts: web
+  become: yes
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Login ke ACR
+      shell: echo "{{ acr_password }}" | docker login {{ acr_server }} -u {{ acr_username }} --password-stdin
+
+    - name: Pull Docker image
+      shell: docker pull {{ acr_server }}/myapp:latest
+
+    - name: Jalankan container
+      shell: |
+        docker rm -f myapp || true
+        docker run -d -p 80:80 --name myapp {{ acr_server }}/myapp:latest
