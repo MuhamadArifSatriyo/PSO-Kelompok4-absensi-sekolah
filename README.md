@@ -1,5 +1,7 @@
 # Aplikasi Web Sistem Absensi Sekolah Berbasis QR Code
 
+# Kelompok 4 - Pengembangan Sistem dan Operasi [C]
+
 [![Continuous Integration](https://github.com/ikhsan3adi/absensi-sekolah-qr-code/actions/workflows/ci.yml/badge.svg)](https://github.com/ikhsan3adi/absensi-sekolah-qr-code/actions/workflows/ci.yml)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ikhsan3adi/absensi-sekolah-qr-code?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/ikhsan3adi/absensi-sekolah-qr-code?style=social)
